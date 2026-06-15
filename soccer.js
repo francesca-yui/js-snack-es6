@@ -34,10 +34,10 @@ getPointsFouls(soccerTeams);
 
 //ciclo for con l'Array aggiornato per estrarre quello che ci serve
 for (let j = 0; j < soccerTeams.length; j++) {
-    const teams = soccerTeams[i];
+    const teams = soccerTeams[j];
 
     //push nel nuovo Arrey solo Name e Fouls
-    teamAndFouls.push({ name: team.name, fouls: team.fouls })
+    teamAndFouls.push({ name: teams.name, fouls: teams.fouls })
 }
 
 console.log(teamAndFouls);
