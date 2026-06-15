@@ -10,7 +10,7 @@ const makeTrack = (title, durationSeconds, genre) => ({ title, durationSeconds, 
 
 const collection = [
     makeCd(
-        'aaaaaaaaaaa',
+        'ciao',
         'jazz',
         'sasaph',
         [
@@ -46,7 +46,8 @@ const collection = [
         ]  
     ),
 ];
-const findJazzCd = collection => {
+
+/*const findJazzCd = collection => {
     for (let i = 0; i < collection.length; i++) {
     const cd = collection[i]; //ciclo nell'arrey, ogni elemento dell'arrey è un oggetto//s
 
@@ -57,15 +58,21 @@ const findJazzCd = collection => {
 
 return null;
 };
+console.log(findJazzCd(collection));*/
 
 const findJazzCd = collection => {
-    for (let j = 0; j < collection.length; j++) {
-    const tracks = cd.tracks[j]; 
+    for (let i = 0; i < collection.length; i++) {
+        const cd = collection[i]; 
 
-    if (tracks.genre === 'jazz') {
-        return cd;
+        for (let j = 0; j < cd.tracks.length; j++) {
+            const tracks = cd.tracks[j]; 
+
+            if (tracks.genre === 'jazz') {
+                return cd;
+            }
     }
-}
+
+}   
 
 return null;
 };
