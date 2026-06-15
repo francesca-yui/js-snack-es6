@@ -17,7 +17,7 @@ let lightestBike = bikes[0];
 const findLightestBike = (bikesArray) => {
     
     for (let i = 0; i < bikesArray.length; i++) {
-        // UNA bike presente dentro 'bikesArray'
+        // per ogni bike presente dentro 'bikesArray'
         const bike = bikesArray[i];
         
         // se il peso di bike < lightestBike

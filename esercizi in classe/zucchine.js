@@ -1,4 +1,5 @@
-forconst zucchine = [
+
+const zucchine = [
     {
         varietà: '',
         pesoGr: 200,
